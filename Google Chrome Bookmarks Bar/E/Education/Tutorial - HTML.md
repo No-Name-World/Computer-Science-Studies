@@ -1,3 +1,0 @@
-- **W3Schools - HTML Tutorial**
-  - **URL**: [https://www.w3schools.com/html/default.asp]
-  - **Details**: W3Schools offers a comprehensive tutorial on HTML (Hypertext Markup Language), covering topics such as structure, elements, attributes, text formatting, links, images, tables, forms, and multimedia. The tutorial includes examples and exercises to help learners understand and create web pages using HTML.

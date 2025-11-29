@@ -1,3 +1,0 @@
-- **W3Schools - CSS Tutorial**
-  - **URL**: [https://www.w3schools.com/css/default.asp]
-  - **Details**: W3Schools offers a comprehensive tutorial on CSS (Cascading Style Sheets), covering topics such as selectors, properties, units, colors, backgrounds, text styling, layout techniques, and responsive design. The tutorial includes examples and exercises to help learners master CSS.

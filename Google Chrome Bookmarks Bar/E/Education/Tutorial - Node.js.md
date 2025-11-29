@@ -1,3 +1,0 @@
-- **W3Schools - Node.js Tutorial**
-  - **URL**: [https://www.w3schools.com/nodejs/default.asp]
-  - **Details**: W3Schools offers a tutorial on Node.js, a server-side JavaScript runtime environment. The tutorial covers basic to advanced topics such as installation, modules, file systems, events, streams, HTTP, and express framework. It includes examples and exercises to help learners build applications using Node.js.
