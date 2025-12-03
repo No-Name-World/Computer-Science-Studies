@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1764690844 source:c:\users\user\desktop\dstr\tutorial\tutorial 2\4 functions\4 functions\main.cpp
+	<iostream>
+	"functions.h"
+
+1764690842 c:\users\user\desktop\dstr\tutorial\tutorial 2\4 functions\4 functions\functions.h
+
+1764690836 source:c:\users\user\desktop\dstr\tutorial\tutorial 2\4 functions\4 functions\add1.cpp
+	<iostream>
+
+1764690838 source:c:\users\user\desktop\dstr\tutorial\tutorial 2\4 functions\4 functions\add2.cpp
+
+1764690839 source:c:\users\user\desktop\dstr\tutorial\tutorial 2\4 functions\4 functions\add3.cpp
+	<iostream>
+
+1764690841 source:c:\users\user\desktop\dstr\tutorial\tutorial 2\4 functions\4 functions\add4.cpp
+	<iostream>
+
+1764690836 source:c:\users\user\desktop\dstr\tutorial\tutorial 2\question 001b\add1.cpp
+	<iostream>
+
+1764690838 source:c:\users\user\desktop\dstr\tutorial\tutorial 2\question 001b\add2.cpp
+
+1764690839 source:c:\users\user\desktop\dstr\tutorial\tutorial 2\question 001b\add3.cpp
+	<iostream>
+
+1764690841 source:c:\users\user\desktop\dstr\tutorial\tutorial 2\question 001b\add4.cpp
+	<iostream>
+
+1764690844 source:c:\users\user\desktop\dstr\tutorial\tutorial 2\question 001b\main.cpp
+	<iostream>
+	"functions.h"
+
+1764690842 c:\users\user\desktop\dstr\tutorial\tutorial 2\question 001b\functions.h
+
