@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 1 – HTML Tables (Question 3)</title>
+</head>
+<body>
+
+<!-- ==========================================================
+     1) SIMPLE TABLE WITH BORDER
+     - <table border> draws thin lines.
+     - <tr> defines each row.
+     - <td> defines normal cells.
+   ========================================================== -->
+<table border>
+    <tr>
+        <td>Food</td>   <!-- First row, first column -->
+        <td>Drink</td>  <!-- First row, second column -->
+        <td>Sweet</td>  <!-- First row, third column -->
+    </tr>
+    <tr>
+        <td>A</td>      <!-- Second row, first column -->
+        <td>B</td>      <!-- Second row, second column -->
+        <td>C</td>      <!-- Second row, third column -->
+    </tr>
+</table>
+<br><br>
+
+
+<!-- ==========================================================
+     2) TABLE USING <th> FOR HEADERS
+     - <th> creates header cells (bold + centered by default).
+   ========================================================== -->
+<table border>
+    <tr>
+        <th>Food</th>   <!-- Header cell -->
+        <th>Drink</th>
+        <th>Sweet</th>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+    </tr>
+</table>
+<br><br>
+
+
+<!-- ==========================================================
+     3) TABLE WITH THICKER BORDER
+     - border="5" makes borders thicker (5 pixels).
+   ========================================================== -->
+<table border="5">
+    <tr>
+        <th>Food</th>
+        <th>Drink</th>
+        <th>Sweet</th>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+    </tr>
+</table>
+<br><br>
+
+
+<!-- ==========================================================
+     4) TABLE WITH CELLSPACING
+     - cellspacing = space BETWEEN cells (gaps between boxes).
+   ========================================================== -->
+<table border cellspacing="10">
+    <tr>
+        <th>Food</th>
+        <th>Drink</th>
+        <th>Sweet</th>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+    </tr>
+</table>
+<br><br>
+
+
+<!-- ==========================================================
+     5) TABLE WITH CELLPADDING
+     - cellpadding = space INSIDE each cell (around the text).
+   ========================================================== -->
+<table border cellpadding="10">
+    <tr>
+        <th>Food</th>
+        <th>Drink</th>
+        <th>Sweet</th>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+    </tr>
+</table>
+<br><br>
+
+
+<!-- ==========================================================
+     6) TABLE WITH WIDTH AND HEIGHT
+     - width/height on <table> sets total size of the table.
+     - width/height on <th> sets that cell size.
+   ========================================================== -->
+<table border width="200" height="100">
+    <tr>
+        <th width="50" height="70">Food</th> <!-- Smaller cell -->
+        <th>Drink</th>
+        <th>Sweet</th>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+    </tr>
+</table>
+<br><br>
+
+
+<!-- ==========================================================
+     7) TABLE WITHOUT BORDER
+     - No border attribute, so no visible grid lines.
+   ========================================================== -->
+<table>
+    <tr>
+        <th>Food</th>
+        <th>Drink</th>
+        <th>Sweet</th>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+    </tr>
+</table>
+<br><br>
+
+
+<!-- ==========================================================
+     8) TABLE USING COLSPAN
+     - colspan="3" merges 3 columns into one big cell.
+     - Used here to create a title "Morning Menu" over 3 columns.
+   ========================================================== -->
+<table border>
+    <tr>
+        <th colspan="3">Morning Menu</th> <!-- One cell spanning 3 columns -->
+    </tr>
+    <tr>
+        <th>Food</th>
+        <th>Drink</th>
+        <th>Sweet</th>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+    </tr>
+</table>
+<br><br>
+
+
+<!-- ==========================================================
+     9) TABLE USING ROWSPAN
+     - rowspan="3" merges 3 rows into one tall cell.
+     - "Morning Menu" appears once on the left across 3 rows.
+   ========================================================== -->
+<table border>
+    <tr>
+        <th rowspan="3">Morning Menu</th> <!-- Tall cell (3 rows high) -->
+        <th>Food</th>
+        <td>A</td>
+    </tr>
+    <tr>
+        <th>Drink</th>
+        <td>B</td>
+    </tr>
+    <tr>
+        <th>Sweet</th>
+        <td>C</td>
+    </tr>
+</table>
+<br><br>
+
+
+<!-- ==========================================================
+     10) HORIZONTAL ALIGNMENT (align)
+     - align="left"   : text sticks to left side.
+     - align="center" : text centered in the cell.
+     - align="right"  : text sticks to right side.
+   ========================================================== -->
+<table border="1" width="160">
+    <tr>
+        <th>Food</th>
+        <th>Drink</th>
+        <th>Sweet</th>
+    </tr>
+    <tr>
+        <td align="left">A</td>    <!-- A at left -->
+        <td align="center">B</td>  <!-- B in center -->
+        <td align="right">C</td>   <!-- C at right -->
+    </tr>
+</table>
+<br><br>
+
+
+<!-- ==========================================================
+     11) VERTICAL ALIGNMENT (valign)
+     - valign="top"     : text at top of the cell.
+     - valign="middle"  : text vertically centered.
+     - valign="bottom"  : text at bottom.
+     - valign="baseline": aligns based on text baseline.
+     - We set table height=100 so the vertical positions are visible.
+   ========================================================== -->
+<table border="1" height="100">
+    <tr>
+        <th>Food</th>
+        <th>Drink</th>
+        <th>Sweet</th>
+        <th>Other</th>
+    </tr>
+    <tr>
+        <td valign="top">A</td>       <!-- A at top -->
+        <td valign="middle">B</td>    <!-- B in middle -->
+        <td valign="bottom">C</td>    <!-- C at bottom -->
+        <td valign="baseline">D</td>  <!-- D aligned by baseline -->
+    </tr>
+</table>
+
+</body>
+</html>

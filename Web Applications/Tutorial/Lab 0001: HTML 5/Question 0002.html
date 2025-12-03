@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 1 – Lists</title>
+</head>
+
+<body>
+
+<!-- ============================================================
+     UNORDERED LIST (SIMPLE)
+     <ul> means "unordered list" (bullet points)
+     <li> means "list item" (each bullet)
+     ============================================================ -->
+
+<b>Unordered Lists</b> <!-- Bold title -->
+<ul> <!-- Start of bullet list -->
+    <li>Today</li>     <!-- • Today -->
+    <li>Tomorrow</li>  <!-- • Tomorrow -->
+    <li>Yesterday</li> <!-- • Yesterday -->
+</ul> <!-- End of bullet list -->
+
+
+<!-- ============================================================
+     UNORDERED LIST (NESTED / MULTI-LEVEL)
+     This shows a list inside another list.
+     Browser will indent inner lists to the right.
+     ============================================================ -->
+
+<b>Unordered Lists</b>
+<ul> <!-- First (outer) bullet list -->
+    <li>Today</li>
+    <li>Tomorrow</li>
+    <li>Yesterday</li>
+
+    <!-- Start inner list INSIDE the outer list -->
+    <ul>
+        <li>123</li>
+        <li>456</li>
+        <li>789</li>
+
+        <!-- Start 3rd level list INSIDE the second list -->
+        <ul>
+            <li>abc</li>
+            <li>pqr</li>
+            <li>xyz</li>
+        </ul> <!-- End of inner-most list -->
+
+    </ul> <!-- End of second-level list -->
+
+</ul> <!-- End of outer-most list -->
+
+
+<!-- ============================================================
+     ORDERED LIST (SIMPLE)
+     <ol> means ordered list (numbers: 1, 2, 3...)
+     ============================================================ -->
+
+<b>Ordered Lists</b>
+<ol>
+    <li>Today</li>     <!-- 1. Today -->
+    <li>Tomorrow</li>  <!-- 2. Tomorrow -->
+    <li>Yesterday</li> <!-- 3. Yesterday -->
+</ol>
+
+
+<!-- ============================================================
+     ORDERED LIST (NESTED / MULTI-LEVEL)
+     Shows numbering inside numbering.
+     ============================================================ -->
+
+<b>Ordered Lists</b>
+<ol> <!-- Outer ordered list -->
+    <li>Today</li>
+    <li>Tomorrow</li>
+    <li>Yesterday</li>
+
+    <!-- Start inner ordered list -->
+    <ol>
+        <li>123</li>
+        <li>456</li>
+        <li>789</li>
+
+        <!-- Start 3rd-level ordered list -->
+        <ol>
+            <li>abc</li>
+            <li>pqr</li>
+            <li>xyz</li>
+        </ol> <!-- End 3rd-level -->
+
+    </ol> <!-- End 2nd-level -->
+
+</ol> <!-- End main ordered list -->
+
+
+<!-- ============================================================
+     DEFINITION LIST
+     <dl> = definition list
+     <dt> = term (the word)
+     <dd> = definition (explanation of the word)
+     ============================================================ -->
+
+<b>Definition Lists</b>
+<dl>
+    <dt>Today</dt>                   <!-- Term -->
+    <dd>Today will be yesterday</dd> <!-- Definition -->
+
+    <dt>Tomorrow</dt>
+    <dd>Tomorrow will be today</dd>
+</dl>
+
+
+<!-- ============================================================
+     BULLET MARK STYLES
+     Using "type=" to change bullet appearance.
+     ============================================================ -->
+
+<b>Mark Styles</b>
+<ul>
+    <li type="disc">disc</li>     <!-- • Solid bullet -->
+    <li type="circle">circle</li> <!-- ○ Hollow circle -->
+    <li type="square">square</li> <!-- ■ Square bullet -->
+</ul>
+
+
+<!-- ============================================================
+     CAPITAL LETTER LISTS
+     type="A" = A, B, C...
+     type="a" = a, b, c...
+     ============================================================ -->
+
+<b>Capital Letters</b>
+
+<!-- Uppercase alphabet -->
+<ol type="A">
+    <li>ONE-ONE</li>   <!-- A -->
+    <li>TWO-TWO</li>   <!-- B -->
+    <li>THREE-THREE</li> <!-- C -->
+</ol>
+
+<!-- Lowercase alphabet -->
+<ol type="a">
+    <li>one-one</li>   <!-- a -->
+    <li>two-two</li>   <!-- b -->
+    <li>three-three</li> <!-- c -->
+</ol>
+
+
+<!-- ============================================================
+     ROMAN NUMERALS
+     type="I" = I, II, III (uppercase)
+     type="i" = i, ii, iii (lowercase)
+     ============================================================ -->
+
+<b>Romanized</b>
+
+<!-- Uppercase Roman -->
+<ol type="I">
+    <li>one-one</li>
+    <li>two-two</li>
+    <li>three-three</li>
+</ol>
+
+<!-- Lowercase Roman -->
+<ol type="i">
+    <li>one-one</li>
+    <li>two-two</li>
+    <li>three-three</li>
+</ol>
+
+
+<!-- ============================================================
+     NUMBERS AND STARTING POSITION
+     type="1" = normal numbering
+     start=5 means numbering begins at 5
+     start=10 means numbering begins at 10
+     ============================================================ -->
+
+<b>Number</b>
+
+<!-- Normal number list -->
+<ol type="1">
+    <li>ONE-ONE</li>
+    <li>TWO-TWO</li>
+    <li>THREE-THREE</li>
+</ol>
+
+<!-- Number list that STARTS at 5 -->
+<ol start="5">
+    <li type="A">ONE-ONE</li> <!-- This tries to force letter A, but browsers may ignore it -->
+    <li>ONE-TWO</li>
+
+    <!-- Inner list starting at 10 -->
+    <ol start="10">
+        <li>TWO-ONE</li>
+        <li type="i">TWO-ONE</li> <!-- This tries to force lowercase roman, browser may ignore -->
+    </ol>
+
+</ol>
+
+</body>
+</html>

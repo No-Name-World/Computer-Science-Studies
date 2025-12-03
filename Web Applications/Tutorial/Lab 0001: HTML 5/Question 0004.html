@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 4 - HTML5 Form Inputs</title>
+</head>
+<body>
+
+<h1>Question 4 – HTML5 Input Controls</h1>
+
+<!-- The <form> tag groups all the input controls together -->
+<!-- action="" means we are not sending to a real server now (just for practice) -->
+<!-- method="post" is common when sending data -->
+<form action="" method="post">
+
+    <!-- PASSWORD (required) -->
+    <!-- label: text shown to user so they know what to enter -->
+    <!-- for="password" connects the label to the input with id="password" -->
+    <!-- type="password": hides what the user types as dots -->
+    <!-- required: user MUST fill this before submitting -->
+    <p>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    </p>
+
+    <!-- EMAIL (required) -->
+    <!-- type="email": browser will check basic email format, like user@example.com -->
+    <!-- required: user MUST fill this before submitting -->
+    <p>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </p>
+
+    <!-- DATE -->
+    <!-- type="date": shows a calendar picker in most browsers -->
+    <p>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+    </p>
+
+    <!-- URL -->
+    <!-- type="url": browser checks if the value looks like a web address (e.g. https://...) -->
+    <p>
+        <label for="website">Website URL:</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com">
+    </p>
+
+    <!-- COLOR -->
+    <!-- type="color": shows a color picker; value is a hex color like #ff0000 -->
+    <p>
+        <label for="favcolor">Favorite Color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+    </p>
+
+    <!-- NUMBER -->
+    <!-- type="number": lets user enter only numbers -->
+    <!-- min and max are optional, but helpful to limit the value -->
+    <p>
+        <label for="quantity">Number:</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="100">
+    </p>
+
+    <!-- SUBMIT BUTTON -->
+    <!-- type="submit": when clicked, the browser tries to send the form -->
+    <!-- If required fields are empty or invalid, the browser will show a message -->
+    <p>
+        <button type="submit">Submit Form</button>
+    </p>
+
+</form>
+
+</body>
+</html>
