@@ -41,3 +41,30 @@ public class MultiThreading_Sequential {
                          // So the output will show all T1 lines first, then all T2 lines.
     }
 }
+
+
+
+/*
+Because .run() does NOT create a thread, the output will look like:
+    T1:0
+    T1:1
+    T1:2
+    T1:3
+    T1:4
+    T2:0
+    T2:1
+    T2:2
+    T2:3
+    T2:4
+
+    - All of T1 first → then all of T2.
+
+
+Using .start():
+    - The .start() method creates a new thread, allowing the tasks to run concurrently, meaning their execution overlaps. 
+    - Because of this, the output appears in mixed or unpredictable order.
+
+Using .run():
+    - The .run() method does not create a new thread; instead, it runs the code sequentially in the current thread. 
+    - As a result, T1 finishes completely before T2 begins, so the output is always ordered: T1 first, then T2.
+*/
